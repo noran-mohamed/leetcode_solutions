@@ -5,6 +5,9 @@ class Solution:
         for i in range(n) :
             result[i] = nums[(i+nums[i]) % n]
         return result
+
+        # simpler
+        return [nums[(i+v)%len(nums)] for i,v in enumerate(nums)]
                 
 
         
